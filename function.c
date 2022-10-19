@@ -65,12 +65,13 @@ int print_string(va_list types, char buffer[],
 		}
 		else
 		{
-		for (i = width - length; i > 0; i--)
-			write(1, " ", 1);
+			for (i = width - length; i > 0; i--)
+				write(1, " ", 1);
 			write(1, &str[0], length);
 			return (width);
 		}
 	}
+
 	return (write(1, str, length));
 }
 /************************* PRINT PERCENT SIGN *************************/
@@ -180,10 +181,8 @@ int print_binary(va_list types, char buffer[],
 			char z = '0' + a[i];
 
 			write(1, &z, 1);
-		count++;
+			count++;
 		}
 	}
 	return (count);
-
 }
-
