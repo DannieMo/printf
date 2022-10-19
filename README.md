@@ -1,3 +1,5 @@
 C - printf
+
 Our first group project at ALX
-jjjjj:
+
+ALX is a remote Software Emgineering School.
